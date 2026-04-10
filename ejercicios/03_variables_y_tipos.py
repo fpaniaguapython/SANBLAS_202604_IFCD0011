@@ -14,3 +14,4 @@ binario = 0b10011000 # bin
 octal = 0o7341012 # oct
 hexadecimal = 0xAFD103848 # hex
 
+EDAD_MAXIMA = 50 # Es una constante (SOLO NOTACIÓN)
