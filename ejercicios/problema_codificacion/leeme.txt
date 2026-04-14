@@ -1,0 +1,13 @@
+En Unicode, existen dos formas de escribir el mismo carácter con tilde:
+
+NFC (Normal Form Canonical Composition): La í es un único carácter 
+(un solo "code point"). Es lo que esperarías: í. Longitud = 1.
+
+NFD (Normal Form Canonical Decomposition): La í son en realidad dos caracteres: 
+una i latina normal y un acento que se "dibuja" encima (´). Al verlos, parecen
+uno solo, pero para Python son dos. Longitud = 2.
+
+Solución: normalizar el texto.
+
+import unicodedata
+texto_normalizado = unicodedata.normalize('NFC', texto)
