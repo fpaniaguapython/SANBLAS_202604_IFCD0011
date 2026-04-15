@@ -1,3 +1,5 @@
+import unicodedata
+
 FILE_NAME = 'C:/Users/Profesormanana/Documents/el_quijote.txt'
 # Opción 'tradicional'
 # fichero = open(FILE_NAME, mode='rt', encoding='utf-8')
@@ -7,6 +9,8 @@ FILE_NAME = 'C:/Users/Profesormanana/Documents/el_quijote.txt'
 # Opción 'with'
 with open(FILE_NAME, mode='rt', encoding='utf-8') as fichero:
     texto = fichero.read()
+
+texto = unicodedata.normalize('NFC', texto)
 
 print(f'Longitud:{len(texto)}')#49895
 
