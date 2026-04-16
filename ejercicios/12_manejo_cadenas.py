@@ -102,3 +102,62 @@ print('         '.isspace()) # True
 
 print(cadena.upper())
 print(cadena.lower())
+
+"""Métodos **split** y **splitline**: split proporciona una lista con los strings que la componen utilizando como separador el espacio (por defecto) u otra cadena; splitline proporciona una lista en la que cada elemento es un string con el contenido de cada línea del string original."""
+
+tokens = cadena.split()
+print(tokens) # ['En', 'un', 'lugar', 'de', 'La', 'Mancha']
+
+texto = """Línea 1
+Línea 2
+Línea 3
+"""
+lineas = texto.splitlines()
+print(lineas) # ['Línea 1', 'Línea 2', 'Línea 3']
+
+"""Método **join**: une elementos de una colección en una cadena utilizando un separador."""
+
+coleccion = ('Tomate', 'Cebolla', 'Pimiento', 'Aceite', 'Agua', 'Vinagre', 'Sal')
+''.join(coleccion) # TomateCebollaPimientoAceiteAguaVinagreSal
+'***'.join(coleccion) # Tomate***Cebolla***Pimiento***Aceite***Agua***Vinagre***Sal
+
+"""Técnica de **slicing**: permite obtener una subcadena de caracteres mediante la indicación de posiciones."""
+
+print(cadena) # En un lugar de La Mancha
+print(cadena[1:7]) # n un l -> Entre el carácter 1 y 7
+print(cadena[:7]) # En un l -> Entre el carácter 0 y 7
+print(cadena[5:]) #  lugar de La Mancha -> Entre el 5 y el último
+print(cadena[:]) # En un lugar de La Mancha -> Entre el 0 y el último
+print(cadena[-3:]) # cha -> Los 3 últimos
+print(cadena[:-3]) # En un lugar de La Man -> Entre el 0 y el -3
+print(cadena[::3]) # EuladLMc -> Todos tomados cada 3 caracteres
+print(cadena[::-2]) # aca Le au un -> Todos tomados cada -2 caracteres (empezando por el final)
+
+"""Añadir **comillas** a una cadena de caracteres"""
+
+'Me dijo "te odio" y se quedó tan tranquila'
+"Me dijo 'te odio' y se quedó tan tranquila"
+'Me dijo \'te odio\' y se quedó tan tranquila'
+"Me dijo \"te odio\" y se quedó tan tranquila"
+"""Me dijo "te odio" y se quedó tan tranquila"""
+
+"""Método **casefold**: proporciona una versión de la cadena susceptible de ser comparada con otra sin tener en cuenta las mayúsculas o minúsculas"""
+
+cadena_1 = 'texto'
+cadena_2 = 'Texto'
+mutada_1 = cadena_1.casefold()
+mutada_2 = cadena_2.casefold()
+print(cadena_1==cadena_2) # False
+print(mutada_1==mutada_2) # True
+
+"""Método **format**: permite dar formato a la cadena de caracteres. Ver [artículo](https://www.w3schools.com/python/ref_string_format.asp)."""
+
+txt = "For only {price:.2f} dollars!"
+print(txt.format(price = 49)) # For only 49.00 dollars!
+
+"""Métodos **strip**, **lstrip**, **rstrip**: elimina los espacios de los dos extremos de la cadena, del extremo izquierdo o del derecho respectivamente."""
+
+texto = '       contenido       '
+print('*'+texto.strip()+'*') # *contenido*
+print('*'+texto.lstrip()+'*') # *contenido       *
+print('*'+texto.rstrip()+'*') # *       contenido*
