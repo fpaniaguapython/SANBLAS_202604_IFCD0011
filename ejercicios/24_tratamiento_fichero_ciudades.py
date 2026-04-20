@@ -22,8 +22,8 @@ with open('ciudades.txt', mode='rt', encoding='utf-8') as fichero:
 # ETAPA 3
 # Leer el fichero ciudades.txt con un bucle for y guardamos los datos
 # una lista de tuplas
-
 input('PULSA ENTER PARA EJECUTAR LA ETAPA 3')
+
 lista_registros = []
 with open('ciudades.txt', mode='rt', encoding='utf-8') as fichero:
     for registro in fichero:
@@ -36,7 +36,31 @@ with open('ciudades.txt', mode='rt', encoding='utf-8') as fichero:
 # ETAPA 4
 # Leer el fichero ciudades.txt con un bucle for y guardamos los datos
 # en un diccionario en el que la clave es el nombre de la ciudad
+input('PULSA ENTER PARA EJECUTAR LA ETAPA 4')
+
+diccionario_registros = dict()
+with open('ciudades.txt', mode='rt', encoding='utf-8') as fichero:
+    for registro in fichero:
+        registro = registro.replace('\n','') # Eliminamos los saltos de línea
+        registro = registro.strip() # Elíminamos los espacios en blanco de los extremos
+        campos = registro.split('#') # Obtenemos una lista con los campos del registro
+        campos = tuple(campos) # Obtenemos una tupla con los campos del registro
+        diccionario_registros[campos[1]]=campos
 
 # ETAPA 5
 # Programamos un sistema que nos pida el nombre de la ciudad y nos
 # muestre sus datos
+
+input('PULSA ENTER PARA EJECUTAR LA ETAPA 5')
+
+diccionario_registros = dict()
+with open('ciudades.txt', mode='rt', encoding='utf-8') as fichero:
+    for registro in fichero:
+        registro = registro.replace('\n','') # Eliminamos los saltos de línea
+        registro = registro.strip() # Elíminamos los espacios en blanco de los extremos
+        campos = registro.split('#') # Obtenemos una lista con los campos del registro
+        campos = tuple(campos) # Obtenemos una tupla con los campos del registro
+        diccionario_registros[campos[1]]=campos
+
+ciudad = input('DIME QUÉ CIUDAD QUIERES:')
+print(diccionario_registros[ciudad])
