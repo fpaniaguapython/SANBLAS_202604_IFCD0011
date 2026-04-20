@@ -1,0 +1,94 @@
+28001#Madrid#Madrid#38000
+08001#Barcelona#Barcelona#36000
+46001#Valencia#Valencia#30000
+41001#Sevilla#Sevilla#27000
+50001#Zaragoza#Zaragoza#31000
+29001#Málaga#Málaga#29000
+03001#Alicante#Alicante#28000
+30001#Murcia#Murcia#26000
+48001#Bilbao#Bilbao#35000
+01001#Vitoria-Gasteiz#Vitoria-Gasteiz#34000
+33001#Oviedo#Oviedo#32000
+39001#Santander#Santander#33000
+15001#A Coruña#A Coruña#31000
+36201#Vigo#Vigo#29000
+07001#Palma#Palma#34000
+35001#Las Palmas de Gran Canaria#Las Palmas#27000
+38001#Santa Cruz de Tenerife#Santa Cruz#28000
+18001#Granada#Granada#26000
+14001#Córdoba#Córdoba#25000
+11001#Cádiz#Cádiz#26000
+21001#Huelva#Huelva#24000
+23001#Jaén#Jaén#24000
+02001#Albacete#Albacete#27000
+13001#Ciudad Real#Ciudad Real#26000
+16001#Cuenca#Cuenca#27000
+19001#Guadalajara#Guadalajara#29000
+45001#Toledo#Toledo#30000
+05001#Ávila#Ávila#28000
+09001#Burgos#Burgos#31000
+24001#León#León#30000
+34001#Palencia#Palencia#29000
+37001#Salamanca#Salamanca#28000
+40001#Segovia#Segovia#30000
+42001#Soria#Soria#31000
+47001#Valladolid#Valladolid#32000
+49001#Zamora#Zamora#28000
+20001#San Sebastián#Donostia#36000
+01002#Vitoria#Vitoria#34000
+48002#Barakaldo#Barakaldo#30000
+48901#Getxo#Getxo#37000
+28801#Alcalá de Henares#Alcalá de Henares#29000
+28901#Getafe#Getafe#28000
+28921#Alcorcón#Alcorcón#28000
+28931#Móstoles#Móstoles#27000
+28100#Alcobendas#Alcobendas#42000
+28220#Majadahonda#Majadahonda#45000
+28224#Pozuelo de Alarcón#Pozuelo de Alarcón#55000
+28320#Pinto#Pinto#27000
+28500#Arganda del Rey#Arganda del Rey#26000
+28660#Boadilla del Monte#Boadilla del Monte#50000
+03690#San Vicente del Raspeig#San Vicente#26000
+03181#Torrevieja#Torrevieja#23000
+03501#Benidorm#Benidorm#27000
+03550#Sant Joan d'Alacant#Sant Joan#28000
+04720#Roquetas de Mar#Roquetas#24000
+04001#Almería#Almería#25000
+11201#Algeciras#Algeciras#23000
+11401#Jerez de la Frontera#Jerez#25000
+41701#Dos Hermanas#Dos Hermanas#24000
+41500#Alcalá de Guadaíra#Alcalá de Guadaíra#24000
+46900#Torrent#Torrent#26000
+46980#Paterna#Paterna#27000
+46470#Catarroja#Catarroja#25000
+46701#Gandía#Gandía#24000
+12001#Castellón de la Plana#Castellón#26000
+12540#Vila-real#Vila-real#27000
+03201#Elche#Elche#26000
+30500#Molina de Segura#Molina#25000
+30800#Lorca#Lorca#24000
+30300#Cartagena#Cartagena#27000
+33201#Gijón#Gijón#30000
+33400#Avilés#Avilés#29000
+39600#Camargo#Camargo#28000
+39300#Torrelavega#Torrelavega#27000
+26001#Logroño#Logroño#31000
+22001#Huesca#Huesca#30000
+44001#Teruel#Teruel#29000
+31500#Tudela#Tudela#30000
+31001#Pamplona#Pamplona#34000
+07800#Ibiza#Ibiza#35000
+07701#Mahón#Mahón#32000
+06800#Mérida#Mérida#25000
+06001#Badajoz#Badajoz#26000
+10001#Cáceres#Cáceres#26000
+10600#Plasencia#Plasencia#25000
+27001#Lugo#Lugo#28000
+32001#Ourense#Ourense#28000
+36001#Pontevedra#Pontevedra#29000
+15401#Ferrol#Ferrol#27000
+24700#Astorga#Astorga#28000
+24400#Ponferrada#Ponferrada#29000
+33510#Pola de Siero#Siero#28000
+33530#Infiesto#Piloña#26000
+33700#Luarca#Valdés#27000
