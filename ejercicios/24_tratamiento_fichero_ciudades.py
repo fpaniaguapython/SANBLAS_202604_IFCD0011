@@ -14,8 +14,7 @@ input('PULSA ENTER PARA EJECUTAR LA ETAPA 2')
 
 with open('ciudades.txt', mode='rt', encoding='utf-8') as fichero:
     for registro in fichero:
-        registro = registro.replace('\n','') # Eliminamos los saltos de línea
-        registro = registro.strip() # Elíminamos los espacios en blanco de los extremos
+        registro = registro.strip() # Elíminamos espacios y saltos de línea
         campos = registro.split('#') # Obtenemos los campos del registro
         print(f'CP:{campos[0]}. CIUDAD:{campos[1]}. RENTA:{campos[3]}')
 
@@ -56,8 +55,7 @@ input('PULSA ENTER PARA EJECUTAR LA ETAPA 5')
 diccionario_registros = dict()
 with open('ciudades.txt', mode='rt', encoding='utf-8') as fichero:
     for registro in fichero:
-        registro = registro.replace('\n','') # Eliminamos los saltos de línea
-        registro = registro.strip() # Elíminamos los espacios en blanco de los extremos
+        registro = registro.strip() # Elíminamos espacios y saltos de línea
         campos = registro.split('#') # Obtenemos una lista con los campos del registro
         campos = tuple(campos) # Obtenemos una tupla con los campos del registro
         diccionario_registros[campos[1]]=campos
