@@ -50,6 +50,3 @@ with open(nombre_fichero, mode='wt', encoding='utf-8') as fichero:
         registro=f'{i+1},{random.choice(nombres)},{random.choice(apellidos)},{random.choice(categorias_programacion)},{random.choice(ciudades)},{random.randint(salario_minimo,salario_maximo)}'
         fichero.write(registro)
         fichero.write('\n')
-
-                                            
-
