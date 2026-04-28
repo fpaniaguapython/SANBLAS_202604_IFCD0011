@@ -81,11 +81,110 @@ resultado = quitar_saltos_de_linea('45_ejercicio_funciones.py')
 print(resultado)
 
 #Función que lee un fichero de números enteros y devuelve la suma
+def sumar_numeros_fichero(nombre_archivo):
+  total = 0
+
+  with open(nombre_archivo) as fichero: # Abrimos archivo
+    numeros = fichero.readlines()
+  
+  for numero in numeros:
+      total+=int(numero)
+
+  return total
+
+resultado = sumar_numeros_fichero('datos_ejercicio_45.txt')
+print(resultado)
+
 #Función que lee un fichero de números enteros y devuelve el máximo
+# **********************
+# SOLUCIÓN 1
+# **********************
+# NO tiene en cuenta que no haya numneros en el fichero y pueda haber texto.
+# NO contempla que vengan varios numeros en la misma linea.
+def get_valor_maximo_from_fichero(nombre_fichero: str) -> int:
+    with open(nombre_fichero, mode="rt", encoding="utf-8") as fichero:
+         # Las dos siguientes (hay que elegir una) descartan líneas
+         # en blanco. Las dos líneas son equivalentes
+         # numeros = [int(linea.strip()) for linea in fichero if linea.strip()]
+         # numeros = [int(linea.strip()) for linea in fichero if linea.strip()!='']
+         numeros = [int(linea.strip()) for linea in fichero]
+    return max(numeros)
+
+print(get_valor_maximo_from_fichero("datos_ejercicio_45.txt"))
+
+# **********************
+# SOLUCIÓN 2
+# **********************
+
+# SI tiene en cuenta que no haya numneros en el fichero y pueda haber texto.
+# SI contempla que vengan varios numeros en la misma linea.
+import re
+
+def get_maximo_from_fichero_optimizado(nombre_fichero: str) -> int:
+    with open(nombre_fichero, mode="rt", encoding="utf-8") as fichero:
+        # La re busca secuencias de dígitos numéricos
+        numeros = [
+            int(numero)
+            for numero in re.findall(r"-?\d+", fichero.read())  # Busca todos los números dentro del texto que leemos.
+        ]
+    return max(numeros) if numeros else 0
+
+print(get_maximo_from_fichero_optimizado("datos_ejercicio_45_con_caracteres.txt"))
+
 #Función que lee un fichero de números enteros y devuelve el mínimo
+def encontrar_minimo(nombre_fichero: str) -> int:
+    with open(nombre_fichero, mode="r", encoding="utf-8") as fichero:
+        numeros = [int(linea.strip()) for linea in fichero]
+    return min(numeros)
+
+print(encontrar_minimo('datos_ejercicio_45.txt'))
+
 #Función que lee un fichero de números enteros y devuelve la media
+def obtener_media_fichero(nombre_fichero : str):
+    with open(nombre_fichero, mode='rt', encoding='utf-8') as fichero:
+        numeros=[int(linea.strip()) for linea in fichero if linea.strip()]
+        return sum(numeros) / len(numeros)
+    
+print(obtener_media_fichero('datos_ejercicio_45.txt'))
+
 #Función que recibe una ciudad e indica si está en una lista de ciudades previa
+ciudades = [
+    "Madrid",
+    "Barcelona",
+    "París",
+    "Londres",
+    "Roma",
+    "Berlín",
+    "Lisboa",
+    "Ámsterdam",
+    "Nueva York",
+    "Tokio"
+]
+
+def comprobar_ciudad(ciudad: str, lista_ciudades: list[str]) -> bool:
+    resultado = ciudad in lista_ciudades
+    return resultado
+
+print(comprobar_ciudad('Madrid', ciudades))
+print(comprobar_ciudad('Bogotá', ciudades))
+
 #Función que indica si un número es par
+def es_par(numero: int) -> bool:
+    return numero % 2 == 0
+
+print(es_par(4))
+print(es_par(5))
+
 #Función que calcula la media de una tupla
+def calcular_media_tupla(tupla: tuple) -> int:
+    suma = sum(tupla)
+    resultado = suma // len(tupla)
+    return resultado
+
+tupla_ejemplo = (54, 64, 68, 8, 76)
+print(calcular_media_tupla(tupla_ejemplo))
+
 #Función que calcula la mediana de una tupla
+
+
 #Función que calcula la moda de una tupla
