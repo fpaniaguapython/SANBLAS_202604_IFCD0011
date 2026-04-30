@@ -6,6 +6,7 @@ La contraseña se almacena en un fichero cifrada con SHA256
 """
 import modulo_47_gestor_credenciales as credenciales
 
+
 if __name__=='__main__':
     email = input('Introduce tu email:')
     password = input('Introduce tu contraseña:')
